@@ -1,0 +1,57 @@
+$fonte: Helvetica, sans-serif;$size:30px;
+$color1:rgb(0, 0, 0);
+$color2:rga(254, 254, 254);
+@mixin jaba($jaba: DarkGray,$border:0px) {
+    background: $jaba;
+    box-shadow: 0 0 1px rgba($jaba, .25);
+    color: #fff;
+    border-radius: $border;
+    
+}  
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    align-items: center;
+}
+#user{
+    font-size: 1.5rem;
+    @include jaba($jaba:rgb(33, 38, 77));
+}
+#getnamer{
+    width:320px;
+    margin: auto;
+    padding:1rem;
+    background-color: rgba(0, 0, 0, 0.287);
+    border: 1px solid $color1;
+    text-align: center;
+}
+h3{
+    @include jaba($jaba:rgb(33, 38, 77),$border:5px);
+}
+#root{
+    margin: auto;
+    width:320px;
+    text-align: center;
+    .fa{
+        font-size: 2rem;
+        animation: spinner 1s infinite;
+    }
+}
+
+@keyframes spinner {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }

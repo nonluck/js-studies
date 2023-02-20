@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="main.js"/>
+    <title>github-api</title>
+    <script src="main.js" ></script>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"> </script>
 </head>
-<body onload="get_github()">
+<body>
     
+    <section id="getnamer">
+        <h3>Pesquise pelo Github</h3>
+        <input type="text" id="name" name="name" >
+        <button onclick="sendName()">Enviar!</button>
+    </section>
+    
+    <div id="root">
+        
+    </div>
 </body>
 </html>
